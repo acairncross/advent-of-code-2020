@@ -1,3 +1,9 @@
+(defpackage day03
+  (:use cl)
+  (:export :solve-a :solve-b))
+
+(in-package :day03)
+
 (defun list-to-2d-array (list)
   (make-array (list (length list)
                     (length (first list)))

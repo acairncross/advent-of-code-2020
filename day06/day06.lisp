@@ -1,5 +1,8 @@
-(require "split-sequence")
-(require "fset")
+(defpackage day06
+  (:use cl)
+  (:export :solve-a :solve-b))
+
+(in-package :day06)
 
 (defun group->question-set (group initial-set combine)
   (loop

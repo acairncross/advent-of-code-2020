@@ -1,3 +1,9 @@
+(defpackage day01
+  (:use cl)
+  (:export :solve-a :solve-b))
+
+(in-package :day01)
+
 ;; Usage: (with-open-file (is "input") (solve-a is))
 (defun solve-a (is)
   (let ((entries (loop

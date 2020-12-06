@@ -1,5 +1,8 @@
-(require "split-sequence")
-(require "cl-ppcre")
+(defpackage day04
+  (:use cl)
+  (:export :solve-a :solve-b))
+
+(in-package :day04)
 
 (defun split-field (field)
   (split-sequence:split-sequence #\: field))

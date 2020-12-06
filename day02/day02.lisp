@@ -1,4 +1,8 @@
-(require "cl-ppcre")
+(defpackage day02
+  (:use cl)
+  (:export :solve-a :solve-b))
+
+(in-package :day02)
 
 (defun parse-line (line)
   (multiple-value-bind (string strings)

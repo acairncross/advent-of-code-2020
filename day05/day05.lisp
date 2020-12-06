@@ -1,3 +1,9 @@
+(defpackage day05
+  (:use cl)
+  (:export :solve-a :solve-b))
+
+(in-package :day05)
+
 (defparameter *numeric-form*
   '((#\F . 0) (#\B . 1) (#\L . 0) (#\R . 1)))
 
