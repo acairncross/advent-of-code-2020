@@ -31,7 +31,7 @@
               for line = (read-line is nil)
               while line
               collect (make-db-row (coerce (parse-line line) 'list)))))
-    (count-if #'is-valid db)))
+    (count-if #'is-valid-a db)))
 
 (defun solve-b (is)
   (let ((db (loop
