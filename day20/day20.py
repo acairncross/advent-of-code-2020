@@ -8,8 +8,6 @@ import re
 
 OrientedTile = namedtuple('OrientedTile', ['id', 'flip', 'rot'])
 
-TILE_DIM = 10
-
 SEA_MONSTER = [
     list('                  # '),
     list('#    ##    ##    ###'),
